@@ -5,27 +5,28 @@ An experimental web application platform for [The Fireworks Project].
 ---------------------------------------------------------------------
 The Bakery is a web application sandbox of sorts.  [The Fireworks Project] will
 use it to try out new ideas for web applications, but you are free to use it
-however you see fit.  The Bakery is designed to run on the [Google App Engine
-platform] and we have no plans to port it to any other platform. However, the
+however you see fit.  The Bakery is designed to run on the [Google App Engine]
+platform and we have no plans to port it to any other platform. However, the
 lessons we learn from the experiments we run in The Bakery should carry over to
 any platform we might want to use in the future.
 
 Ultimately we intend to create a platform that will allow us to rapidly develop
-and deploy web applications. Although The Bakery is not that platform, we hope
-it will be a big step on the way to getting there.
+and deploy complex web applications by joining together many components that
+are much simpler and easier to understand. In addition, we want to move all of
+the logic of the applications to the client, and leave the servers to handle
+data storage only.
 
-We want all of our web applications to eventually be composed of many small
-parts that can be integrated with one another. A modular architecture will make
-it simple to build and deploy applications that would otherwise be very
-complex. In addition, we want to move all of the logic of the applications to
-the client, and leave the servers to handle data storage only. The problem is
-that we don't really know how we want to achieve all this awesomeness.
+The problem is that we don't really know how we want to achieve all this
+awesomeness. The goal of The Bakery is to allow us to take baby steps in the
+directrion we want to go. More than anything, The Bakery will be a learning
+tool that will allow us to perfect our craft and take over the World.
 
-So, this is where The Bakery comes in. It has all the tools we need to continue
-building applications for our customers while experimenting with our ideas for
-modular design -- all on the same platform. If this all goes according to plan
-we'll learn some valuable lessons and apply them in the future. It's all part
-of our plan to take over the World.
+
+The Bakery has the tools we need to continue building applications for our
+customers while experimenting with our ideas for modular design -- all on the
+same platform. If this experiment goes according to plan we'll learn some
+valuable lessons and apply them to a future platform in a galaxy not so far
+away.
 
 Architecture
 ------------
@@ -37,9 +38,9 @@ scalable application server for what we hope will be many high paying
 customers.
 
 ### Datastore
-The Bakery includes an HTTP API for a datastore. This API is simply hooked
-directly into the GAE datastore API. The datastore HTTP API allows JavaScript
-code on the client to store and query data from the server.
+The Bakery includes an HTTP API which is simply hooked directly into the GAE
+datastore API. The HTTP datastore API allows JavaScript code on the client to
+store and query data from the server.
 
 ### Libraries
 The Bakery also maintains and dishes out JavaScript, HTML, and CSS libraries
@@ -58,14 +59,15 @@ install Python 2.5 before going any further. If necessary, download and install
 Python 2.5 for your platform from the [Python] web site. If you are using Linux
 or Mac OS X 10.5 Leopard then give yourself a pat on the back, because Python
 is probably already installed. To find out, open a terminal and type `python
---version` then hit enter. You should see something like `Python 2.5.2`.
+--version` and hit enter. You should see something like `Python 2.5.2` diplayed
+on the command line.
 
 ### Install The Bakery
 Download the latest release of [The Bakery]. You'll get a zip file named
 something like `thebakery_0.1.zip`. Move it to wherever you want it on your
 computer and unpack it. A directory called `thebakery` will be created
 automatically. It will contain all of the necessary files to start baking web
-applications -- done.
+applications.
 
 ### Install the inspector. 
 The first application you'll want to install into the bakery before you get
